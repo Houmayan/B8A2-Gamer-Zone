@@ -260,7 +260,7 @@ footer .nav-title{
   display: flex;
   gap: 15px;
   align-items: center;
-  width: max-content;
+
   /* white-space: nowrap; */
 }
 .game-content img {
@@ -271,6 +271,7 @@ footer .nav-title{
 font-size: 1.2rem;
 font-weight: 600;
 display: block;
+width: max-content;
 }
 .game-content:hover{
   border-radius: 50px;
@@ -336,14 +337,17 @@ font-weight: 500;
     grid-template-columns: repeat(3,1fr);
     gap: 20px;
   }
-  .play-content img {
+  .banner-img img{
     width: 300px;
+  }
+  .play-content img {
+    width: 250px;
   
     /* height: 600px; */
   }
   .play-content .pos {
   
-    width: 200px;
+    width: 150px;
   }
   .condition ul{
     display: grid;
@@ -354,11 +358,20 @@ font-weight: 500;
     gap: 10px;
     /* */
   }
-  
+  .game-content{
+    width: 150px;
+  }
 
-  .game-content img, .game-content p {
-    width: 30px;
-    font-size: 1rem;
+  .game-content img{
+    width: 20px;
+    height: 20px;
+    
+    
+
+  }
+  .game-content p{
+    font-size: 0.8rem;
+    font-weight: 400;
   }
   
 }
