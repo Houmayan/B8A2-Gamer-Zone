@@ -10,10 +10,11 @@
 img {
   width: 100%;
 }
-.btn-primary, .btn-sign {
+.btn-primary,
+.btn-sign {
   border-radius: 3rem;
-  background-color: #FF42A5;
-  color: #FFF;
+  background-color: #ff42a5;
+  color: #fff;
   border: 0;
   font-size: 1.2rem;
   font-weight: 600;
@@ -22,9 +23,8 @@ img {
   white-space: nowrap;
   margin-top: 30px;
 }
-.btn-sign{
-  background-color: #4EC5F7;
-  
+.btn-sign {
+  background-color: #4ec5f7;
 }
 .gammer-title {
   font-size: 2.8rem;
@@ -87,18 +87,14 @@ main {
   width: 60%; */
   margin: 0 auto;
   max-width: 1020px;
-  
 }
 /* Banner Section */
-.banner-container{
-  
+.banner-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .banner-content {
-  
-  
   /* padding: 140px 200px; */
 }
 .banner-goat {
@@ -117,19 +113,57 @@ main {
   font-size: 1.2rem;
   font-weight: 500;
   margin-bottom: 15px;
-  white-space: nowrap
+  white-space: nowrap;
 }
 
-.btn{
+.btn {
   display: flex;
   gap: 24px;
 }
 
-.banner-img img{
-  
+.banner-img img {
   width: 450px;
   /* background-color: red; */
 }
+
+/* Online Games Section */
+.online-title {
+  margin-top: 120px;
+  color: #0b0223;
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+
+.online-title .online-funny-text {
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.online-description {
+  text-align: center;
+  margin: 16px 0px 50px 0px;
+  font-weight: 400;
+}
+.online-games .game-card {
+  display: flex;
+  width: 100%;
+  gap: 24px;
+}
+.online-games .game-card .game-img {
+  width: 25%;
+  /* width: 100%; */
+}
+.game-img-title {
+  color: #534c64;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+.online-games .game-card .watch {
+  border-radius: 16px;
+}
+
 /* responsive design  */
 
 /* for mobile */
@@ -137,8 +171,13 @@ main {
 @media screen and (max-width: 576px) {
   .nav-container,
   .nav-gamer-left,
-  .nav-gamer-right, .banner-container {
+  .nav-gamer-right,
+  .banner-container, .online-games .game-card {
     flex-direction: column;
+  }
+  .online-games .game-card .game-img{
+    margin: 0 auto;
+    width: 80%;
   }
   .nav-gamer-right {
     margin-top: 60px;
