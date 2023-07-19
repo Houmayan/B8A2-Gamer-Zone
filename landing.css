@@ -48,7 +48,7 @@ nav {
   width: 80px;
 }
 .nav-container {
-  max-width: 1024px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 30px 0;
   display: flex;
@@ -65,6 +65,15 @@ nav {
   margin-left: 20px;
   font-size: 2.5rem;
   font-weight: 700;
+}
+footer .nav-title{
+  color: white;
+}
+.nav-title-g{
+  background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent
 }
 
 .nav-gamer-right,
@@ -175,6 +184,13 @@ nav {
   top: 0;
   border-radius: 16px;
 }
+.play{
+  position: absolute;
+  bottom: 150px;
+  left: 120px;
+  font-size:3rem ;
+}
+
 .game-img-title {
   color: #534c64;
   font-size: 0.9rem;
@@ -232,16 +248,20 @@ nav {
   margin-top: 150px;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  /* display: grid;
+  grid-template-columns: repeat(5,1fr); */
   justify-content: center;
-  gap: 50px;
+  gap: 20px;
+  /* */
 }
+
+
 .game-content {
   display: flex;
   gap: 15px;
-  width: 200px;
   align-items: center;
-  white-space: nowrap;
+  width: max-content;
+  /* white-space: nowrap; */
 }
 .game-content img {
   width: 40px;
@@ -250,12 +270,22 @@ nav {
   color: #0B0223;
 font-size: 1.2rem;
 font-weight: 600;
+display: block;
+}
+.game-content:hover{
+  border-radius: 50px;
+  border: solid 1px  #f948b2;
+background: #FFF;
 }
 footer{
   width: 100%;
   background-color:#0B0223;
   width: 100vw;
 height: 636px;
+}
+.footer{
+  /* margin-top: 120px; */
+  padding-top: 120px;
 }
 
 .imp-link ul{
@@ -268,10 +298,18 @@ text-align: center;
 white-space: nowrap;
 font-size: 1.2rem;
 font-weight: 400;
-display: grid;
-grid-template-columns: repeat(6,1fr);
+display: flex;
+  justify-content: center;
 gap: 60px;
 
+}
+.condition{
+  color: rgba(255, 255, 255, 0.60);
+text-align: center;
+
+font-size: 1rem;
+
+font-weight: 500;
 }
 /* responsive design  */
 
@@ -286,11 +324,41 @@ gap: 60px;
     flex-direction: column;
   }
   .online-games .game-card .game-img,
-  .nav-gamer-left {
+  .nav-gamer-left, .game-type-res {
     margin: 0 auto;
     width: 80%;
   }
   .nav-gamer-right {
     margin-top: 60px;
   }
+  .imp-link ul{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+  }
+  .play-content img {
+    width: 300px;
+  
+    /* height: 600px; */
+  }
+  .play-content .pos {
+  
+    width: 200px;
+  }
+  .condition ul{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+  .game-type {
+   
+    gap: 10px;
+    /* */
+  }
+  
+
+  .game-content img, .game-content p {
+    width: 30px;
+    font-size: 1rem;
+  }
+  
 }
