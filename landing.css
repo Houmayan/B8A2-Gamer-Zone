@@ -10,6 +10,9 @@
 img {
   width: 100%;
 }
+a {
+  color: white;
+}
 .btn-primary,
 .btn-sign {
   border-radius: 3rem;
@@ -159,9 +162,50 @@ main {
   color: #534c64;
   font-size: 0.9rem;
   font-weight: 500;
+  margin-top: 16px;
 }
 .online-games .game-card .watch {
   border-radius: 16px;
+}
+/* play section */
+.play-instantly {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.play-content img {
+  width: 500px;
+  /* height: 600px; */
+}
+/* .play-content .pos img {
+  position: absolute;
+  bottom: -1100px;
+  left: 550px;
+  width: 300px;
+} */
+.play-heading-text {
+  text-align: right;
+
+  font-size: 3rem;
+  margin-right: 150px;
+  font-weight: 700;
+  /* margin-right: 0px; */
+}
+.play-heading-text .play-title {
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.play-description{
+  color: #534C64;
+  text-align: right;
+  margin-right: 150px;
+  font-size: 1.2rem;
+  font-weight: 400;
 }
 
 /* responsive design  */
@@ -172,10 +216,11 @@ main {
   .nav-container,
   .nav-gamer-left,
   .nav-gamer-right,
-  .banner-container, .online-games .game-card {
+  .banner-container,
+  .online-games .game-card, .play-instantly {
     flex-direction: column;
   }
-  .online-games .game-card .game-img{
+  .online-games .game-card .game-img {
     margin: 0 auto;
     width: 80%;
   }
