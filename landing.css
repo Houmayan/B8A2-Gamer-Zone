@@ -374,3 +374,63 @@ font-weight: 500;
   }
   
 }
+
+@media screen and (min-width: 576px) and (max-width: 960px) {
+  .nav-container,
+  .nav-gamer-right,
+  .banner-container,
+  .online-games .game-card,
+  .play-instantly {
+    flex-direction: column;
+  }
+  .online-games .game-card .game-img,
+  .nav-gamer-left, .game-type-res {
+    margin: 0 auto;
+    width: 80%;
+  }
+  .nav-gamer-right {
+    margin-top: 60px;
+  }
+  .imp-link ul{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+  }
+  .banner-img img{
+    width: 300px;
+  }
+  .play-content img {
+    width: 250px;
+  
+    /* height: 600px; */
+  }
+  .play-content .pos {
+  
+    width: 150px;
+  }
+  .condition ul{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+  .game-type {
+   
+    gap: 10px;
+    /* */
+  }
+  .game-content{
+    width: 150px;
+  }
+
+  .game-content img{
+    width: 20px;
+    height: 20px;
+    
+    
+
+  }
+  .game-content p{
+    font-size: 0.8rem;
+    font-weight: 400;
+  }
+  
+}
