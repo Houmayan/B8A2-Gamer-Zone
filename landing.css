@@ -92,7 +92,7 @@ footer .nav-title{
   border-radius: 8px;
   background-color: rgba(11, 2, 35, 0.1);
 }
-/* Main Secti,on */
+/* Main Section */
 .container,
 .banner-container {
   /* background-image: url("images/group14.png");
@@ -113,9 +113,7 @@ footer .nav-title{
   justify-content: space-between;
   align-items: center;
 }
-.banner-content {
-  /* padding: 140px 200px; */
-}
+
 .banner-goat {
   width: 360px;
   text-align: left;
